@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PreparaEntrevista | Projeto ODS</title>
+  <meta name="description" content="Site educativo para ajudar pessoas a se prepararem para entrevistas de emprego, alinhado aos Objetivos de Desenvolvimento Sustentável." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topo">
+    <nav class="nav">
+      <a class="logo" href="#inicio" aria-label="Página inicial">
+        <span class="logo-icone">RH</span>
+        <span>PreparaEntrevista</span>
+      </a>
+
+      <div class="links">
+        <a href="#ods">ODS</a>
+        <a href="#trilhas">Trilhas</a>
+        <a href="#perguntas">Perguntas</a>
+        <a href="#checklist">Checklist</a>
+      </div>
+
+      <a class="botao botao-pequeno" href="#simulador">Começar</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero-conteudo">
+        <p class="etiqueta">Projeto acadêmico • Gestão de Recursos Humanos • ODS</p>
+        <h1>Guia básico para entrevistas de emprego com mais segurança, clareza e confiança.</h1>
+        <p class="hero-texto">
+          Uma plataforma gratuita com trilhas de estudo, perguntas comuns, dicas de postura,
+          preparação emocional e um roteiro simples para ajudar pessoas em busca do primeiro emprego,
+          recolocação profissional ou melhoria de carreira.
+        </p>
+
+        <div class="acoes">
+          <a class="botao" href="#trilhas">Ver trilhas de estudo</a>
+          <a class="botao botao-secundario" href="#simulador">Fazer simulação</a>
+        </div>
+
+        <div class="indicadores" aria-label="Indicadores do projeto">
+          <div>
+            <strong>100%</strong>
+            <span>gratuito</span>
+          </div>
+          <div>
+            <strong>3 ODS</strong>
+            <span>impactados</span>
+          </div>
+          <div>
+            <strong>5 passos</strong>
+            <span>para se preparar</span>
+          </div>
+        </div>
+      </div>
+
+      <aside class="card-destaque" aria-label="Resumo da proposta">
+        <h2>Objetivo do projeto</h2>
+        <p>
+          Reduzir barreiras de acesso ao emprego oferecendo orientação acessível para entrevistas,
+          especialmente para jovens, pessoas em vulnerabilidade social e candidatos sem experiência.
+        </p>
+        <ul>
+          <li>Conteúdo simples e direto</li>
+          <li>Preparação para entrevistas presenciais e online</li>
+          <li>Foco em inclusão, empregabilidade e desenvolvimento humano</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section id="ods" class="secao">
+      <div class="cabecalho-secao">
+        <p class="etiqueta">Alinhamento com os Objetivos de Desenvolvimento Sustentável</p>
+        <h2>Quais ODS o projeto pode atender?</h2>
+        <p>
+          A proposta dialoga principalmente com educação, trabalho digno e inclusão social,
+          porque ajuda pessoas a desenvolverem competências para acessar oportunidades profissionais.
+        </p>
+      </div>
+
+      <div class="grade-cards tres-colunas">
+        <article class="card ods-card ods-4">
+          <span class="numero-ods">ODS 4</span>
+          <h3>Educação de Qualidade</h3>
+          <p>Oferece conteúdo educativo e prático sobre comunicação, currículo, comportamento e preparação profissional.</p>
+        </article>
+
+        <article class="card ods-card ods-8">
+          <span class="numero-ods">ODS 8</span>
+          <h3>Trabalho Decente e Crescimento Econômico</h3>
+          <p>Contribui para a empregabilidade, preparando candidatos para processos seletivos e acesso ao mercado de trabalho.</p>
+        </article>
+
+        <article class="card ods-card ods-10">
+          <span class="numero-ods">ODS 10</span>
+          <h3>Redução das Desigualdades</h3>
+          <p>Democratiza informações que muitas vezes ficam restritas a quem já possui orientação profissional ou networking.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="trilhas" class="secao secao-clara">
+      <div class="cabecalho-secao">
+        <p class="etiqueta">Trilhas de estudo</p>
+        <h2>O que a pessoa deve estudar antes da entrevista?</h2>
+        <p>O site pode organizar o conteúdo em módulos curtos, como uma jornada de preparação.</p>
+      </div>
+
+      <div class="timeline">
+        <button class="passo passo-botao" type="button" data-modal="autoconhecimento">
+          <span>01</span>
+          <div>
+            <strong class="passo-titulo">Autoconhecimento profissional</strong>
+            <p>Identificar qualidades, pontos de melhoria, experiências, habilidades e objetivos de carreira.</p>
+          </div>
+        </button>
+
+        <button class="passo passo-botao" type="button" data-modal="curriculo">
+          <span>02</span>
+          <div>
+            <strong class="passo-titulo">Currículo e apresentação pessoal</strong>
+            <p>Aprender a falar sobre o próprio currículo, explicar experiências e adaptar a apresentação à vaga.</p>
+          </div>
+        </button>
+
+        <button class="passo passo-botao" type="button" data-modal="empresa">
+          <span>03</span>
+          <div>
+            <strong class="passo-titulo">Pesquisa sobre a empresa</strong>
+            <p>Entender missão, valores, área de atuação, cultura organizacional e requisitos da vaga.</p>
+          </div>
+        </button>
+
+        <button class="passo passo-botao" type="button" data-modal="comunicacao">
+          <span>04</span>
+          <div>
+            <strong class="passo-titulo">Comunicação e comportamento</strong>
+            <p>Treinar linguagem clara, postura, escuta ativa, pontualidade, roupa adequada e etiqueta profissional.</p>
+          </div>
+        </button>
+
+        <button class="passo passo-botao" type="button" data-modal="simulacao">
+          <span>05</span>
+          <div>
+            <strong class="passo-titulo">Simulação de entrevista</strong>
+            <p>Responder perguntas comuns e receber um roteiro para melhorar a segurança na hora da conversa.</p>
+          </div>
+        </button>
+      </div>
+    </section>
+
+    <section id="perguntas" class="secao">
+      <div class="cabecalho-secao">
+        <p class="etiqueta">Banco de perguntas</p>
+        <h2>Perguntas comuns em entrevistas</h2>
+        <p>O candidato pode estudar exemplos e montar respostas com antecedência.</p>
+      </div>
+
+      <div class="grade-cards duas-colunas">
+        <article class="card pergunta">
+          <h3>“Fale sobre você.”</h3>
+          <p><strong>Como responder:</strong> apresente sua formação, experiências, habilidades e objetivo profissional em até 1 minuto.</p>
+        </article>
+
+        <article class="card pergunta">
+          <h3>“Por que você quer essa vaga?”</h3>
+          <p><strong>Como responder:</strong> conecte seus interesses com a empresa, a função e o que você pode contribuir.</p>
+        </article>
+
+        <article class="card pergunta">
+          <h3>“Quais são seus pontos fortes?”</h3>
+          <p><strong>Como responder:</strong> escolha qualidades reais e dê exemplos práticos, como organização, responsabilidade ou comunicação.</p>
+        </article>
+
+        <article class="card pergunta">
+          <h3>“Qual é seu ponto de melhoria?”</h3>
+          <p><strong>Como responder:</strong> cite algo verdadeiro, mas mostre que você está trabalhando para melhorar.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="simulador" class="secao simulador">
+      <div class="simulador-card">
+        <div>
+          <p class="etiqueta">Simulador simples</p>
+          <h2>Roteiro rápido para treinar em casa</h2>
+          <p>
+            A pessoa pode usar esse roteiro antes da entrevista. Em uma versão futura, o site pode ter
+            um formulário interativo com respostas salvas e feedback automático.
+          </p>
+        </div>
+
+        <div class="roteiro">
+          <ol>
+            <li>Leia a descrição da vaga e destaque 3 requisitos principais.</li>
+            <li>Escreva uma resposta curta para “fale sobre você”.</li>
+            <li>Liste 2 experiências ou situações que mostram suas habilidades.</li>
+            <li>Treine olhando para a câmera ou para outra pessoa.</li>
+            <li>Anote o que pode melhorar: clareza, tempo, postura e segurança.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="checklist" class="secao secao-clara">
+      <div class="cabecalho-secao">
+        <p class="etiqueta">Checklist final</p>
+        <h2>Antes da entrevista, confira:</h2>
+      </div>
+
+      <div class="checklist">
+        <label><input type="checkbox"> Pesquisei sobre a empresa.</label>
+        <label><input type="checkbox"> Revisei meu currículo.</label>
+        <label><input type="checkbox"> Treinei minha apresentação pessoal.</label>
+        <label><input type="checkbox"> Separei roupa adequada para a ocasião.</label>
+        <label><input type="checkbox"> Confirmei horário, endereço ou link da entrevista.</label>
+        <label><input type="checkbox"> Preparei perguntas para fazer ao recrutador.</label>
+      </div>
+    </section>
+
+    <section class="secao impacto">
+      <div>
+        <p class="etiqueta">Impacto social esperado</p>
+        <h2>Por que esse projeto é relevante para Recursos Humanos?</h2>
+        <p>
+          A área de RH pode atuar não apenas selecionando pessoas, mas também promovendo inclusão,
+          orientação e desenvolvimento. Um site como este ajuda candidatos a entenderem melhor o processo
+          seletivo, reduz insegurança e amplia o acesso a informações profissionais básicas.
+        </p>
+      </div>
+      <a class="botao" href="#inicio">Voltar ao início</a>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>PreparaEntrevista • Projeto ODS desenvolvido para curso de Gestão de Recursos Humanos</p>
+    <p>ODS 4 • ODS 8 • ODS 10</p>
+  </footer>
+
+  <div class="modal-fundo" id="modalTrilha" aria-hidden="true">
+    <div class="modal-caixa" role="dialog" aria-modal="true" aria-labelledby="modalTitulo">
+      <button class="modal-fechar" type="button" aria-label="Fechar janela">&times;</button>
+      <p class="etiqueta">Conteúdo da trilha</p>
+      <h2 id="modalTitulo">Título da janela</h2>
+      <div class="modal-conteudo" id="modalConteudo"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
