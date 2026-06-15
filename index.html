@@ -3,255 +3,304 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PreparaEntrevista | Projeto ODS</title>
-  <meta name="description" content="Site educativo para ajudar pessoas a se prepararem para entrevistas de emprego, alinhado aos Objetivos de Desenvolvimento Sustentável." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <meta name="description" content="EcoBem: orientações práticas de saúde, ergonomia e bem-estar para a rotina universitária." />
+  <meta name="theme-color" content="#075985" />
+  <title>EcoBem | Saúde e bem-estar na rotina universitária</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="topo">
-    <nav class="nav">
-      <a class="logo" href="#inicio" aria-label="Página inicial">
-        <span class="logo-icone">RH</span>
-        <span>PreparaEntrevista</span>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header" id="topo">
+    <div class="container nav-wrap">
+      <a class="brand" href="#inicio" aria-label="EcoBem, página inicial">
+        <span class="brand-mark" aria-hidden="true">✦</span>
+        <span>EcoBem</span>
       </a>
 
-      <div class="links">
-        <a href="#ods">ODS</a>
-        <a href="#trilhas">Trilhas</a>
-        <a href="#perguntas">Perguntas</a>
-        <a href="#checklist">Checklist</a>
-      </div>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">
+        <span class="sr-only">Abrir menu</span>
+        <span></span><span></span><span></span>
+      </button>
 
-      <a class="botao botao-pequeno" href="#simulador">Começar</a>
-    </nav>
+      <nav id="menu-principal" class="main-nav" aria-label="Navegação principal">
+        <a href="#cuide-se">Cuide-se</a>
+        <a href="#pausa">Pausa guiada</a>
+        <a href="#checklist">Checklist</a>
+        <a href="#rh">Para instituições</a>
+        <a href="#fontes">Fontes</a>
+      </nav>
+
+      <button id="themeToggle" class="icon-button" type="button" aria-label="Alternar tema claro e escuro" title="Alternar tema">
+        <span aria-hidden="true">◐</span>
+      </button>
+    </div>
   </header>
 
-  <main>
-    <section id="inicio" class="hero">
-      <div class="hero-conteudo">
-        <p class="etiqueta">Projeto acadêmico • Gestão de Recursos Humanos • ODS</p>
-        <h1>Guia básico para entrevistas de emprego com mais segurança, clareza e confiança.</h1>
-        <p class="hero-texto">
-          Uma plataforma gratuita com trilhas de estudo, perguntas comuns, dicas de postura,
-          preparação emocional e um roteiro simples para ajudar pessoas em busca do primeiro emprego,
-          recolocação profissional ou melhoria de carreira.
-        </p>
-
-        <div class="acoes">
-          <a class="botao" href="#trilhas">Ver trilhas de estudo</a>
-          <a class="botao botao-secundario" href="#simulador">Fazer simulação</a>
-        </div>
-
-        <div class="indicadores" aria-label="Indicadores do projeto">
-          <div>
-            <strong>100%</strong>
-            <span>gratuito</span>
-          </div>
-          <div>
-            <strong>3 ODS</strong>
-            <span>impactados</span>
-          </div>
-          <div>
-            <strong>5 passos</strong>
-            <span>para se preparar</span>
-          </div>
-        </div>
-      </div>
-
-      <aside class="card-destaque" aria-label="Resumo da proposta">
-        <h2>Objetivo do projeto</h2>
-        <p>
-          Reduzir barreiras de acesso ao emprego oferecendo orientação acessível para entrevistas,
-          especialmente para jovens, pessoas em vulnerabilidade social e candidatos sem experiência.
-        </p>
-        <ul>
-          <li>Conteúdo simples e direto</li>
-          <li>Preparação para entrevistas presenciais e online</li>
-          <li>Foco em inclusão, empregabilidade e desenvolvimento humano</li>
-        </ul>
-      </aside>
-    </section>
-
-    <section id="ods" class="secao">
-      <div class="cabecalho-secao">
-        <p class="etiqueta">Alinhamento com os Objetivos de Desenvolvimento Sustentável</p>
-        <h2>Quais ODS o projeto pode atender?</h2>
-        <p>
-          A proposta dialoga principalmente com educação, trabalho digno e inclusão social,
-          porque ajuda pessoas a desenvolverem competências para acessar oportunidades profissionais.
-        </p>
-      </div>
-
-      <div class="grade-cards tres-colunas">
-        <article class="card ods-card ods-4">
-          <span class="numero-ods">ODS 4</span>
-          <h3>Educação de Qualidade</h3>
-          <p>Oferece conteúdo educativo e prático sobre comunicação, currículo, comportamento e preparação profissional.</p>
-        </article>
-
-        <article class="card ods-card ods-8">
-          <span class="numero-ods">ODS 8</span>
-          <h3>Trabalho Decente e Crescimento Econômico</h3>
-          <p>Contribui para a empregabilidade, preparando candidatos para processos seletivos e acesso ao mercado de trabalho.</p>
-        </article>
-
-        <article class="card ods-card ods-10">
-          <span class="numero-ods">ODS 10</span>
-          <h3>Redução das Desigualdades</h3>
-          <p>Democratiza informações que muitas vezes ficam restritas a quem já possui orientação profissional ou networking.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="trilhas" class="secao secao-clara">
-      <div class="cabecalho-secao">
-        <p class="etiqueta">Trilhas de estudo</p>
-        <h2>O que a pessoa deve estudar antes da entrevista?</h2>
-        <p>O site pode organizar o conteúdo em módulos curtos, como uma jornada de preparação.</p>
-      </div>
-
-      <div class="timeline">
-        <button class="passo passo-botao" type="button" data-modal="autoconhecimento">
-          <span>01</span>
-          <div>
-            <strong class="passo-titulo">Autoconhecimento profissional</strong>
-            <p>Identificar qualidades, pontos de melhoria, experiências, habilidades e objetivos de carreira.</p>
-          </div>
-        </button>
-
-        <button class="passo passo-botao" type="button" data-modal="curriculo">
-          <span>02</span>
-          <div>
-            <strong class="passo-titulo">Currículo e apresentação pessoal</strong>
-            <p>Aprender a falar sobre o próprio currículo, explicar experiências e adaptar a apresentação à vaga.</p>
-          </div>
-        </button>
-
-        <button class="passo passo-botao" type="button" data-modal="empresa">
-          <span>03</span>
-          <div>
-            <strong class="passo-titulo">Pesquisa sobre a empresa</strong>
-            <p>Entender missão, valores, área de atuação, cultura organizacional e requisitos da vaga.</p>
-          </div>
-        </button>
-
-        <button class="passo passo-botao" type="button" data-modal="comunicacao">
-          <span>04</span>
-          <div>
-            <strong class="passo-titulo">Comunicação e comportamento</strong>
-            <p>Treinar linguagem clara, postura, escuta ativa, pontualidade, roupa adequada e etiqueta profissional.</p>
-          </div>
-        </button>
-
-        <button class="passo passo-botao" type="button" data-modal="simulacao">
-          <span>05</span>
-          <div>
-            <strong class="passo-titulo">Simulação de entrevista</strong>
-            <p>Responder perguntas comuns e receber um roteiro para melhorar a segurança na hora da conversa.</p>
-          </div>
-        </button>
-      </div>
-    </section>
-
-    <section id="perguntas" class="secao">
-      <div class="cabecalho-secao">
-        <p class="etiqueta">Banco de perguntas</p>
-        <h2>Perguntas comuns em entrevistas</h2>
-        <p>O candidato pode estudar exemplos e montar respostas com antecedência.</p>
-      </div>
-
-      <div class="grade-cards duas-colunas">
-        <article class="card pergunta">
-          <h3>“Fale sobre você.”</h3>
-          <p><strong>Como responder:</strong> apresente sua formação, experiências, habilidades e objetivo profissional em até 1 minuto.</p>
-        </article>
-
-        <article class="card pergunta">
-          <h3>“Por que você quer essa vaga?”</h3>
-          <p><strong>Como responder:</strong> conecte seus interesses com a empresa, a função e o que você pode contribuir.</p>
-        </article>
-
-        <article class="card pergunta">
-          <h3>“Quais são seus pontos fortes?”</h3>
-          <p><strong>Como responder:</strong> escolha qualidades reais e dê exemplos práticos, como organização, responsabilidade ou comunicação.</p>
-        </article>
-
-        <article class="card pergunta">
-          <h3>“Qual é seu ponto de melhoria?”</h3>
-          <p><strong>Como responder:</strong> cite algo verdadeiro, mas mostre que você está trabalhando para melhorar.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="simulador" class="secao simulador">
-      <div class="simulador-card">
-        <div>
-          <p class="etiqueta">Simulador simples</p>
-          <h2>Roteiro rápido para treinar em casa</h2>
+  <main id="conteudo">
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span class="dot"></span> Projeto alinhado à ODS 3</div>
+          <h1>Pequenas pausas.<br /><span>Mais bem-estar.</span></h1>
           <p>
-            A pessoa pode usar esse roteiro antes da entrevista. Em uma versão futura, o site pode ter
-            um formulário interativo com respostas salvas e feedback automático.
+            Orientações simples para cuidar do corpo e da mente durante os estudos,
+            o estágio e o trabalho — sem complicação e sem custo.
           </p>
+          <div class="hero-actions">
+            <button class="button primary" type="button" data-open-modal="checkinModal">Fazer check-in rápido</button>
+            <a class="button secondary" href="#pausa">Começar uma pausa</a>
+          </div>
+          <div class="hero-meta" aria-label="Características do site">
+            <span>✓ Gratuito</span>
+            <span>✓ Responsivo</span>
+            <span>✓ Sem cadastro</span>
+          </div>
         </div>
 
-        <div class="roteiro">
-          <ol>
-            <li>Leia a descrição da vaga e destaque 3 requisitos principais.</li>
-            <li>Escreva uma resposta curta para “fale sobre você”.</li>
-            <li>Liste 2 experiências ou situações que mostram suas habilidades.</li>
-            <li>Treine olhando para a câmera ou para outra pessoa.</li>
-            <li>Anote o que pode melhorar: clareza, tempo, postura e segurança.</li>
+        <div class="hero-visual reveal" aria-label="Painel ilustrativo de bem-estar">
+          <div class="orb orb-one"></div>
+          <div class="orb orb-two"></div>
+          <div class="dashboard-card main-card">
+            <div class="card-topline">
+              <span>Seu ritmo hoje</span>
+              <span class="status-pill">em equilíbrio</span>
+            </div>
+            <div class="wellbeing-ring" aria-hidden="true">
+              <span>72</span>
+              <small>pontos</small>
+            </div>
+            <div class="mini-grid">
+              <div><strong>2 min</strong><span>pausa</span></div>
+              <div><strong>6 copos</strong><span>água</span></div>
+              <div><strong>3</strong><span>alongamentos</span></div>
+            </div>
+          </div>
+          <div class="floating-card card-a"><span>🧘</span><strong>Respire</strong><small>por 1 minuto</small></div>
+          <div class="floating-card card-b"><span>💧</span><strong>Hidrate-se</strong><small>um copo agora</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-band" aria-label="Dados do diagnóstico simulado">
+      <div class="container stats-grid">
+        <article><strong>73%</strong><span>passam 6h ou mais diante de telas</span></article>
+        <article><strong>70%</strong><span>relatam cansaço mental frequente</span></article>
+        <article><strong>55%</strong><span>sentem desconforto físico com frequência</span></article>
+        <article><strong>95%</strong><span>veem impacto positivo em ações de bem-estar</span></article>
+      </div>
+      <p class="data-note container">Dados simulados para fins acadêmicos, com uma amostra fictícia de 40 estudantes.</p>
+    </section>
+
+    <section class="section" id="cuide-se">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="eyebrow">Comece pelo possível</div>
+          <h2>Quatro frentes para uma rotina mais saudável</h2>
+          <p>Escolha uma ação pequena. Consistência vale mais do que perfeição.</p>
+        </div>
+
+        <div class="cards-grid">
+          <article class="info-card reveal">
+            <div class="card-icon">🪑</div>
+            <h3>Ergonomia</h3>
+            <p>Ajuste o ambiente para reduzir esforço desnecessário e desconforto.</p>
+            <button class="text-button" type="button" data-tip="ergonomia">Ver orientações <span>→</span></button>
+          </article>
+          <article class="info-card reveal">
+            <div class="card-icon">🚶</div>
+            <h3>Pausas e movimento</h3>
+            <p>Interrompa longos períodos sentado e mude de posição ao longo do dia.</p>
+            <button class="text-button" type="button" data-tip="movimento">Ver orientações <span>→</span></button>
+          </article>
+          <article class="info-card reveal">
+            <div class="card-icon">🌙</div>
+            <h3>Sono e energia</h3>
+            <p>Rotina, descanso e hidratação influenciam a atenção e o bem-estar.</p>
+            <button class="text-button" type="button" data-tip="energia">Ver orientações <span>→</span></button>
+          </article>
+          <article class="info-card reveal">
+            <div class="card-icon">💬</div>
+            <h3>Saúde mental</h3>
+            <p>Reconheça sinais de sobrecarga e procure apoio antes de chegar ao limite.</p>
+            <button class="text-button" type="button" data-tip="mental">Ver orientações <span>→</span></button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft-section" id="pausa">
+      <div class="container split-layout">
+        <div class="reveal">
+          <div class="eyebrow">Pausa guiada</div>
+          <h2>Dois minutos para sair do piloto automático</h2>
+          <p class="lead">Use o cronômetro como um lembrete para respirar, relaxar os ombros e mudar de posição.</p>
+          <ol class="steps">
+            <li><span>1</span> Apoie os pés e descruze as pernas.</li>
+            <li><span>2</span> Solte os ombros e as mãos.</li>
+            <li><span>3</span> Respire lentamente e olhe para um ponto distante.</li>
           </ol>
         </div>
+
+        <div class="timer-card reveal" aria-live="polite">
+          <div class="timer-label">Pausa de recuperação</div>
+          <div id="timerDisplay" class="timer-display">02:00</div>
+          <div class="timer-progress" aria-hidden="true"><span id="timerBar"></span></div>
+          <p id="timerMessage">Quando estiver pronto, inicie a pausa.</p>
+          <div class="timer-actions">
+            <button id="startTimer" class="button primary" type="button">Iniciar</button>
+            <button id="resetTimer" class="button ghost" type="button">Reiniciar</button>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="checklist" class="secao secao-clara">
-      <div class="cabecalho-secao">
-        <p class="etiqueta">Checklist final</p>
-        <h2>Antes da entrevista, confira:</h2>
-      </div>
+    <section class="section" id="checklist">
+      <div class="container split-layout checklist-layout">
+        <div class="checklist-card reveal">
+          <div class="card-topline">
+            <span>Checklist de hoje</span>
+            <button id="clearChecklist" class="small-link" type="button">Limpar</button>
+          </div>
+          <div class="progress-summary">
+            <div class="progress-circle" id="progressCircle"><span id="progressValue">0%</span></div>
+            <p><strong id="completedCount">0 de 6</strong><br />ações concluídas</p>
+          </div>
+          <div class="habit-list">
+            <label><input type="checkbox" data-habit="agua" /><span>Bebi água nas últimas horas</span></label>
+            <label><input type="checkbox" data-habit="postura" /><span>Ajustei minha postura e a tela</span></label>
+            <label><input type="checkbox" data-habit="pausa" /><span>Fiz uma pausa curta</span></label>
+            <label><input type="checkbox" data-habit="movimento" /><span>Movimentei o corpo</span></label>
+            <label><input type="checkbox" data-habit="prioridades" /><span>Defini prioridades realistas</span></label>
+            <label><input type="checkbox" data-habit="apoio" /><span>Reconheci quando preciso de apoio</span></label>
+          </div>
+        </div>
 
-      <div class="checklist">
-        <label><input type="checkbox"> Pesquisei sobre a empresa.</label>
-        <label><input type="checkbox"> Revisei meu currículo.</label>
-        <label><input type="checkbox"> Treinei minha apresentação pessoal.</label>
-        <label><input type="checkbox"> Separei roupa adequada para a ocasião.</label>
-        <label><input type="checkbox"> Confirmei horário, endereço ou link da entrevista.</label>
-        <label><input type="checkbox"> Preparei perguntas para fazer ao recrutador.</label>
+        <div class="reveal">
+          <div class="eyebrow">Ferramenta prática</div>
+          <h2>Transforme informação em hábito</h2>
+          <p class="lead">O diagnóstico mostrou que o desafio não é apenas saber o que fazer, mas lembrar e conseguir colocar em prática.</p>
+          <div class="callout">
+            <strong>Dica:</strong> escolha duas ações para repetir durante uma semana. Depois, acrescente uma nova.
+          </div>
+          <button class="button secondary" type="button" data-open-modal="planModal">Montar meu plano semanal</button>
+        </div>
       </div>
     </section>
 
-    <section class="secao impacto">
-      <div>
-        <p class="etiqueta">Impacto social esperado</p>
-        <h2>Por que esse projeto é relevante para Recursos Humanos?</h2>
-        <p>
-          A área de RH pode atuar não apenas selecionando pessoas, mas também promovendo inclusão,
-          orientação e desenvolvimento. Um site como este ajuda candidatos a entenderem melhor o processo
-          seletivo, reduz insegurança e amplia o acesso a informações profissionais básicas.
-        </p>
+    <section class="section dark-section" id="rh">
+      <div class="container">
+        <div class="section-heading light reveal">
+          <div class="eyebrow">Gestão de pessoas</div>
+          <h2>O bem-estar também depende do ambiente</h2>
+          <p>Instituições de ensino, lideranças e áreas de Recursos Humanos podem reduzir riscos e incentivar práticas saudáveis.</p>
+        </div>
+
+        <div class="action-grid">
+          <article class="action-card reveal"><span>01</span><h3>Dar exemplo</h3><p>Evitar a cultura de disponibilidade permanente e respeitar pausas.</p></article>
+          <article class="action-card reveal"><span>02</span><h3>Melhorar o ambiente</h3><p>Observar iluminação, ventilação, mobiliário e organização das atividades.</p></article>
+          <article class="action-card reveal"><span>03</span><h3>Comunicar apoio</h3><p>Divulgar canais de acolhimento e explicar como buscar ajuda.</p></article>
+          <article class="action-card reveal"><span>04</span><h3>Ouvir a comunidade</h3><p>Coletar feedback e adaptar as ações às necessidades reais.</p></article>
+        </div>
       </div>
-      <a class="botao" href="#inicio">Voltar ao início</a>
+    </section>
+
+    <section class="section" id="fontes">
+      <div class="container sources-grid">
+        <div class="reveal">
+          <div class="eyebrow">Informação responsável</div>
+          <h2>Fontes e limites do projeto</h2>
+          <p class="lead">O EcoBem apresenta orientações educativas e preventivas. Não realiza diagnóstico e não substitui atendimento profissional.</p>
+          <div class="warning-box">
+            <strong>Precisa de ajuda?</strong>
+            <p>Procure um serviço de saúde, um profissional qualificado ou os canais de apoio da sua instituição. Em situação de risco imediato, busque o serviço de emergência da sua região.</p>
+          </div>
+        </div>
+
+        <div class="source-list reveal">
+          <a href="https://sdgs.un.org/goals/goal3" target="_blank" rel="noopener noreferrer"><span>ONU</span><div><strong>ODS 3 — Saúde e bem-estar</strong><small>Objetivos de Desenvolvimento Sustentável</small></div><b>↗</b></a>
+          <a href="https://www.who.int/publications/i/item/9789240015128" target="_blank" rel="noopener noreferrer"><span>OMS</span><div><strong>Atividade física e comportamento sedentário</strong><small>Diretrizes de saúde pública</small></div><b>↗</b></a>
+          <a href="https://www.who.int/publications/i/item/9789240053052" target="_blank" rel="noopener noreferrer"><span>OMS</span><div><strong>Saúde mental no trabalho</strong><small>Recomendações baseadas em evidências</small></div><b>↗</b></a>
+          <a href="https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-17-nr-17" target="_blank" rel="noopener noreferrer"><span>MTE</span><div><strong>NR-17 — Ergonomia</strong><small>Condições de trabalho e adaptação psicofisiológica</small></div><b>↗</b></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing-section">
+      <div class="container closing-card reveal">
+        <div>
+          <div class="eyebrow">Seu próximo passo</div>
+          <h2>Escolha uma ação pequena para hoje.</h2>
+          <p>Bem-estar não é uma tarefa a mais. É uma condição para aprender, trabalhar e viver melhor.</p>
+        </div>
+        <a class="button primary" href="#checklist">Abrir checklist</a>
+      </div>
     </section>
   </main>
 
-  <footer class="rodape">
-    <p>PreparaEntrevista • Projeto ODS desenvolvido para curso de Gestão de Recursos Humanos</p>
-    <p>ODS 4 • ODS 8 • ODS 10</p>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><strong>EcoBem</strong><p>Projeto acadêmico de extensão universitária — ODS 3.</p></div>
+      <div><p>Dados e resultados apresentados no projeto são simulados para fins didáticos.</p></div>
+      <a href="#topo">Voltar ao topo ↑</a>
+    </div>
   </footer>
 
-  <div class="modal-fundo" id="modalTrilha" aria-hidden="true">
-    <div class="modal-caixa" role="dialog" aria-modal="true" aria-labelledby="modalTitulo">
-      <button class="modal-fechar" type="button" aria-label="Fechar janela">&times;</button>
-      <p class="etiqueta">Conteúdo da trilha</p>
-      <h2 id="modalTitulo">Título da janela</h2>
-      <div class="modal-conteudo" id="modalConteudo"></div>
+  <dialog id="tipModal" class="modal">
+    <div class="modal-header">
+      <div><span class="modal-kicker">Orientações práticas</span><h2 id="tipTitle">Cuide-se</h2></div>
+      <button class="modal-close" type="button" aria-label="Fechar janela">×</button>
     </div>
-  </div>
+    <div id="tipContent" class="modal-content"></div>
+  </dialog>
+
+  <dialog id="checkinModal" class="modal wide-modal">
+    <div class="modal-header">
+      <div><span class="modal-kicker">Check-in de bem-estar</span><h2>Como está sua rotina hoje?</h2></div>
+      <button class="modal-close" type="button" aria-label="Fechar janela">×</button>
+    </div>
+    <form id="checkinForm" class="modal-content quiz-form">
+      <fieldset><legend>1. Há quanto tempo você está sem fazer uma pausa?</legend>
+        <label><input type="radio" name="q1" value="0" required /> Menos de 1 hora</label>
+        <label><input type="radio" name="q1" value="1" /> Entre 1 e 2 horas</label>
+        <label><input type="radio" name="q1" value="2" /> Mais de 2 horas</label>
+      </fieldset>
+      <fieldset><legend>2. Como estão seus ombros, costas ou pescoço?</legend>
+        <label><input type="radio" name="q2" value="0" required /> Sem desconforto</label>
+        <label><input type="radio" name="q2" value="1" /> Um pouco tensos</label>
+        <label><input type="radio" name="q2" value="2" /> Com dor ou incômodo forte</label>
+      </fieldset>
+      <fieldset><legend>3. Como está sua energia mental?</legend>
+        <label><input type="radio" name="q3" value="0" required /> Consigo me concentrar</label>
+        <label><input type="radio" name="q3" value="1" /> Estou disperso ou cansado</label>
+        <label><input type="radio" name="q3" value="2" /> Estou sobrecarregado</label>
+      </fieldset>
+      <fieldset><legend>4. Você se hidratou recentemente?</legend>
+        <label><input type="radio" name="q4" value="0" required /> Sim</label>
+        <label><input type="radio" name="q4" value="1" /> Não lembro</label>
+      </fieldset>
+      <button class="button primary full" type="submit">Ver recomendação</button>
+      <div id="checkinResult" class="quiz-result" hidden></div>
+    </form>
+  </dialog>
+
+  <dialog id="planModal" class="modal wide-modal">
+    <div class="modal-header">
+      <div><span class="modal-kicker">Plano semanal</span><h2>Escolha três compromissos simples</h2></div>
+      <button class="modal-close" type="button" aria-label="Fechar janela">×</button>
+    </div>
+    <form id="planForm" class="modal-content plan-form">
+      <label><input type="checkbox" name="plan" value="Fazer uma pausa curta a cada bloco de estudo" /> Fazer uma pausa curta a cada bloco de estudo</label>
+      <label><input type="checkbox" name="plan" value="Manter uma garrafa de água por perto" /> Manter uma garrafa de água por perto</label>
+      <label><input type="checkbox" name="plan" value="Ajustar a tela e apoiar os pés" /> Ajustar a tela e apoiar os pés</label>
+      <label><input type="checkbox" name="plan" value="Definir um horário realista para encerrar" /> Definir um horário realista para encerrar</label>
+      <label><input type="checkbox" name="plan" value="Conversar com alguém quando a sobrecarga aumentar" /> Conversar com alguém quando a sobrecarga aumentar</label>
+      <button class="button primary full" type="submit">Salvar meu plano</button>
+      <div id="planResult" class="quiz-result" hidden></div>
+    </form>
+  </dialog>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
   <script src="script.js"></script>
 </body>
